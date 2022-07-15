@@ -31,9 +31,10 @@ class Solution:
         
         # TODO: Write code below to return an int with the solution to the prompt
         count = 0
-        for i in range(len(hi_string)):
-            if hi_string[i] == "h" and hi_string[i+1] == "i":
-                count +=1
+        if len(hi_string) >= 2:
+            for i in range(len(hi_string)):
+                if hi_string[i] == "h" and hi_string[i+1] == "i":
+                    count +=1
 
         return count 
         pass
