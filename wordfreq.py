@@ -30,7 +30,7 @@ class Solution:
         # return: int
         
         # TODO: Write code below to return an int with the solution to the prompt
-        low = lower(hi_string)
+        low = hi_string.lower()
         count = 0
         if len(hi_string) >= 2:
             for i in range(len(hi_string)-1):
