@@ -30,14 +30,13 @@ class Solution:
         # return: int
         
         # TODO: Write code below to return an int with the solution to the prompt
+        low = lower(hi_string)
         count = 0
         if len(hi_string) >= 2:
             for i in range(len(hi_string)-1):
-                if hi_string[i] == "h" and hi_string[i+1] == "i":
+                if low[i] == "h" and low[i+1] == "i":
                     count +=1
-                else: 
-                    return count
-
+                
         return count 
         pass
 
