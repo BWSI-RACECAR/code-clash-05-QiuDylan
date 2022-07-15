@@ -35,6 +35,8 @@ class Solution:
             for i in range(len(hi_string)-1):
                 if hi_string[i] == "h" and hi_string[i+1] == "i":
                     count +=1
+                else: 
+                    return count
 
         return count 
         pass
